@@ -39,7 +39,7 @@ body {
   background-color: var(--primary-orange);
   border-radius: 39px;
   color: #ffffff;
-  padding: 16px 46.5px;
+  padding: 16px 40px;
   border: none;
 }
 .no-bg-btn {
@@ -48,7 +48,7 @@ body {
   background-color: #000000;
   border-radius: 39px;
   color: #ffffff;
-  padding: 16px 46.5px;
+  padding: 16px 40px;
   border: 1px solid;
 }
 /* Width and center-align */
@@ -56,7 +56,7 @@ body {
 .banner {
   width: 73.61%;
   margin: 0 auto;
-  margin-top: 57px;
+  /* margin-top: 57px; */
 }
 
 /* header */
@@ -109,9 +109,11 @@ header {
 .banner {
   align-items: center;
   justify-content: space-between;
+  margin-top: 96px;
 }
 .banner-left {
   max-width: 520px;
+  margin-bottom: 48px;
 }
 .banner-title {
   font-weight: 900;
@@ -127,11 +129,17 @@ header {
 .banner-description {
   color: var(--desc-text-color);
   margin: 28px auto;
+  line-height: 150%;
 }
 
-.banner-btns > * {
+/* .banner-btns > * {
   margin-right: 14px;
+  margin-bottom: 14px;
+} */
+.banner-btns {
+  gap: 14px;
 }
+
 .banner-right {
   position: relative;
 }
@@ -177,22 +185,79 @@ header {
   border-radius: 50%;
 }
 .card-2 {
-    align-items: center;
+  align-items: center;
   gap: 12px;
 }
 /* Responsive style */
+/* Small device: up to 576 px 
+ Medium Device: 576px to 992 px 
+ Large Device: above 993 px  */
 /* Mobile / 576px range */
 
 @media screen and (max-width: 576px) {
+  header {
+    padding-top: 52px;
+  }
   /* Navbar */
   .nav-items-container {
     display: none;
   }
-  .navbar {
-    margin-top: 52px;
+  .navbar,
+  .banner {
     width: 90%;
   }
+
   .burger-menu {
     display: block;
+  }
+  /* banner */
+  .banner {
+    margin-top: 52px;
+    flex-direction: column;
+  }
+  .width-285px {
+    max-width: 285px;
+  }
+  .banner-title {
+    font-weight: 900;
+    font-size: 2.25rem;
+  }
+  #shape {
+    font-family: "Miama", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    font-style: italic;
+  }
+  .primary-btn,
+  .no-bg-btn {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+
+  #banner-card-1 {
+    left: 194px;
+    top: 47px;
+    right: inherit;
+    h1 {
+      font-size: 1.89rem;
+    }
+    p {
+      font-size: 0.614rem;
+    }
+  }
+  #banner-card-2 {
+    left: 12px;
+    top: 271.38px;
+    right: inherit;
+    h1 {
+      font-size: 1.13rem;
+    }
+    p {
+      font-size: 0.756rem;
+    }
+  }
+  .circle-css {
+    height: 30.24px;
+    width: 30.24px;
   }
 }
