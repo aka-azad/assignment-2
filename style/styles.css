@@ -1,0 +1,94 @@
+@import url("https://fonts.cdnfonts.com/css/miama");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* font-family: "Inter", sans-serif;
+font-family: 'Miama', sans-serif;
+*/
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* colors */
+:root {
+  --primary-orange: #e6533c;
+  --primary-bg-black: #000000;
+  --card-bg-white: rgba(255, 255, 255, 0.5);
+  --desc-text-color: rgba(255, 255, 255, 0.5);
+  --general-text-color: rgb(255, 255, 255);
+}
+
+/* shared style */
+
+.flex {
+  display: flex;
+}
+body {
+  background: #000;
+  color: #fff;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.selected-page {
+  background-color: var(--primary-orange);
+  font-weight: 600;
+}
+/* Navbar */
+
+.navbar,
+.nav-items-container {
+  align-items: center;
+}
+.navbar {
+  justify-content: space-between;
+  width: 73.61%;
+  margin: 0 auto;
+  margin-top: 57px;
+}
+.brand {
+  font-size: 1.38rem;
+  font-weight: 800;
+  font-style: italic;
+  color: var(--primary-orange);
+}
+.nav-items-container {
+  padding: 4px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+}
+.nav-items {
+  list-style: none;
+  gap: 47px;
+  li {
+    padding: 8px 20px;
+    border-radius: 46px;
+    a {
+      text-decoration: none;
+      color: var(--general-text-color);
+    }
+  }
+}
+.burger-menu {
+  display: none;
+}
+
+/* main */
+/* Banner-section */
+
+
+/* Responsive style */
+/* Mobile / 576px range */
+
+@media screen and (max-width: 576px) {
+    /* Navbar */
+  .nav-items-container {
+    display: none;
+  }
+  .navbar {
+    margin-top: 52px;
+    width: 90%;
+  }
+  .burger-menu {
+    display: block;
+  }
+}
