@@ -13,7 +13,7 @@ font-family: 'Miama', sans-serif;
 :root {
   --primary-orange: #e6533c;
   --primary-bg-black: #000000;
-  --card-bg-white: rgba(255, 255, 255, 0.1);
+  --card-bg-white: rgba(255, 255, 255, 0.3);
   --desc-text-color: rgba(255, 255, 255, 0.5);
   --general-text-color: rgb(255, 255, 255);
 }
@@ -51,10 +51,17 @@ body {
   padding: 16px 40px;
   border: 1px solid;
 }
+.text-center {
+  text-align: center;
+}
 /* Width and center-align */
 .navbar,
-.banner {
-  width: 73.61%;
+.banner,
+.habits,
+.run-extra,
+.our-team,
+.footer-content {
+  max-width: 73.61%;
   margin: 0 auto;
   /* margin-top: 57px; */
 }
@@ -62,8 +69,11 @@ body {
 /* header */
 
 header {
-  background: linear-gradient(180deg, #111111 31%, rgb(119 119 119 / 0%) 70%);
-
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
   padding-top: 57px;
 }
 
@@ -187,6 +197,53 @@ header {
 .card-2 {
   align-items: center;
   gap: 12px;
+}
+
+/* main */
+/* section "habits" */
+.habits-card-box {
+  justify-content: space-between;
+}
+.habits-card {
+  text-align: center;
+  img {
+    border-radius: 50%;
+  }
+}
+/* run extra */
+.run-extra {
+  justify-content: space-between;
+  background-color: var(--card-bg-white);
+}
+
+/* our team */
+
+.trainer-img-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.img-box {
+  width: 100%;
+  /* Height needs to be adjusted */
+  height: 300px;
+  border-radius: 15px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.img-box-text {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+/* footer */
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr) 25% 25%;
 }
 /* Responsive style */
 /* Small device: up to 576 px 
