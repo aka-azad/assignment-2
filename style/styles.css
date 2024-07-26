@@ -201,6 +201,23 @@ header {
 
 /* main */
 /* section "habits" */
+.habits {
+  margin-top: 100px;
+}
+
+.habits-title-box {
+  max-width: 60%;
+  margin: 0 auto 58px auto;
+}
+.habits-title {
+  margin-bottom: 16px;
+  font-size: 48px;
+}
+.habits-description {
+  color: var(--desc-text-color);
+  font-size: 14px;
+  padding: 0 10px;
+}
 .habits-card-box {
   justify-content: space-between;
 }
@@ -208,6 +225,18 @@ header {
   text-align: center;
   img {
     border-radius: 50%;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  p {
+    color: var(--desc-text-color);
+    font-size: 14px;
+    padding: 0 10px;
   }
 }
 /* run extra */
