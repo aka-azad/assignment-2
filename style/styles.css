@@ -289,7 +289,8 @@ header {
     display: none;
   }
   .navbar,
-  .banner {
+  .banner,
+  .habits {
     width: 90%;
   }
 
@@ -345,5 +346,27 @@ header {
   .circle-css {
     height: 30.24px;
     width: 30.24px;
+  }
+  /* Habits */
+
+  .habits-title-box {
+    max-width: 100%;
+  }
+  .habits-title {
+    margin-bottom: 14px;
+    font-size: 2rem;
+  }
+  .habits-description {
+    padding: 0;
+  }
+  .habits-card-box {
+    flex-direction: column;
+  }
+  .habits-card {
+    margin-bottom: 40px;
+  }
+
+  .run-extra {
+    flex-direction: column;
   }
 }
