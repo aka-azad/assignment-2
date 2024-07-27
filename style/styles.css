@@ -330,13 +330,67 @@ header {
   position: absolute;
   left: 15px;
   bottom: 15px;
-  
+  h1 {
+    font-size: 1.25rem;
+    font-weight: 900;
+  }
+  p {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 /* footer */
+footer {
+  margin-top: 88px;
+  padding-bottom: 35px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-brand {
+  font-size: 4.375rem;
+  margin-bottom: 20px;
+}
+.footer-description {
+  font-size: 0.875rem !important;
+}
 .footer-content {
+  padding-top: 65px;
   display: grid;
   grid-template-columns: repeat(1, 1fr) 25% 25%;
+}
+.footer-column {
+  /* width: auto; */
+  margin-bottom: 80px;
+  h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 39px;
+  }
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.column1 {
+  width: 443px;
+}
+/* 
+.column2{
+  width: 181px;
+}
+.column3{
+  width: 181px;
+}
+ */
+.footer-hr{
+  width: 1060px;
+  margin: 0 auto;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.copy-rights{
+  
 }
 /* Responsive style */
 /* Small device: up to 576 px 
