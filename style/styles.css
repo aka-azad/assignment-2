@@ -242,9 +242,41 @@ header {
 /* run extra */
 .run-extra {
   justify-content: space-between;
-  background-color: var(--card-bg-white);
+  background-color: rgb(34, 34, 34);
+  padding: 41px 54px;
+  margin-top: 100px;
+  border-radius: 18px;
+  min-height: 370px;
 }
+.run-extra-text_box {
+  max-width: 443px;
+  padding-right: 50px;
 
+  h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 14px;
+  }
+  p {
+    line-height: 24px;
+    font-size: 14px;
+    color: var(--desc-text-color);
+    margin-bottom: 34px;
+  }
+  img {
+    width: 366px;
+  }
+}
+.run-extra-img {
+  width: 366px;
+  height: 322px;
+  border-radius: 18px;
+  overflow: hidden;
+
+  img {
+    object-position: -766px -200px;
+  }
+}
 /* our team */
 
 .trainer-img-grid {
@@ -365,8 +397,26 @@ header {
   .habits-card {
     margin-bottom: 40px;
   }
-
+  /* run-extra */
   .run-extra {
     flex-direction: column;
+    padding: 35px 33px;
+    height: auto;
+  }
+  .run-extra-text_box {
+    max-width: 443px;
+    padding-right: 0;
+
+    h1 {
+      font-size: 32px;
+      padding-right: 73px;
+    }
+    button {
+      width: 100%;
+    }
+  }
+  .run-extra-img {
+    margin-top: 30px;
+    width: 100%;
   }
 }
