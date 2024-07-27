@@ -95,7 +95,7 @@ header {
 }
 .navbar {
   justify-content: space-between;
-  width: 73.61%;
+  max-width: 73.61%;
   margin: 0 auto;
 }
 .brand {
@@ -270,9 +270,6 @@ header {
     line-height: 24px;
     margin-bottom: 34px;
   }
-  img {
-    width: 366px;
-  }
 }
 .run-extra-img {
   width: 366px;
@@ -384,13 +381,16 @@ footer {
   width: 181px;
 }
  */
-.footer-hr{
+.footer-hr {
   width: 1060px;
   margin: 0 auto;
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
-.copy-rights{
-  
+.copy-rights {
+  padding-top: 35px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.25rem;
+  text-align: center;
 }
 /* Responsive style */
 /* Small device: up to 576 px 
@@ -411,10 +411,14 @@ footer {
   .nav-items-container {
     display: none;
   }
+  /* All Widths */
   .navbar,
   .banner,
-  .habits {
-    width: 90%;
+  .habits,
+  .footer-content,
+  .run-extra,
+  .our-team {
+    max-width: 90%;
   }
 
   .burger-menu {
@@ -509,10 +513,31 @@ footer {
   .run-extra-img {
     margin-top: 30px;
     width: 100%;
+    height: auto;
+    img {
+      width: 100%;
+      object-position: 0 0;
+    }
   }
   /* our-team */
   .trainer-img-grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
+  }
+  /* footer */
+  .footer-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .column1 {
+    width: auto;
+  }
+  .footer-hr {
+    width: auto;
+    margin: 0 20px;
+  }
+  .copy-rights {
+    text-align: left;
+    margin-left: 20px;
   }
 }
