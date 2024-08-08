@@ -281,6 +281,14 @@ header {
     object-position: -766px -200px;
   }
 }
+/* BNI Calculator */
+.bmi-headings{
+  max-width: 670px;
+  margin: 88px auto 88px auto;
+}
+.bmi-content{
+  background-color: rgba(255, 255, 255, 0.1);
+}
 /* our team */
 .our-team {
   margin-top: 90px;
