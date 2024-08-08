@@ -70,7 +70,8 @@ body {
 .habits,
 .run-extra,
 .our-team,
-.footer-content {
+.footer-content,
+.bmi-content {
   max-width: 73.61%;
   margin: 0 auto;
   /* margin-top: 57px; */
@@ -281,13 +282,55 @@ header {
     object-position: -766px -200px;
   }
 }
-/* BNI Calculator */
-.bmi-headings{
+/* BMI Calculator */
+.bmi-headings {
   max-width: 670px;
-  margin: 88px auto 88px auto;
+  margin: 88px auto;
+  p {
+    padding: 0;
+  }
 }
-.bmi-content{
+.bmi-calculator-box {
   background-color: rgba(255, 255, 255, 0.1);
+}
+.bmi-content {
+  justify-content: space-between;
+  padding: 52px 0;
+  p {
+    padding: 0;
+    margin-bottom: 34px;
+  }
+}
+.bmi-title {
+  margin-bottom: 14px;
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+.bmi-calculator {
+  width: 577px;
+}
+.calculator-form {
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.calculator-form input,
+select {
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  width: calc(50.6% - 12px);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+}
+input:first-child {
+  margin-right: 12px;
+}
+#activity {
+  width: 100%;
 }
 /* our team */
 .our-team {
